@@ -60,6 +60,8 @@ try{
      Ttext1.classList.remove(`popUp3`)
      Ttext2.classList.remove(`popUp3`)
      teamCard1.classList.remove(`popUp5`)  
+     aboutSection.classList.add(`px-4`)
+
      teamCard2.classList.remove(`popUp5`)  
      teamCard3.classList.remove(`popUp5`)  
      aboutContent.classList.remove(`zoom1`)
@@ -83,6 +85,7 @@ try{
         aboutSection.classList.add(`popUp1`);
         exTxt2.classList.add(`hidden`);
         aboutTextDiv.classList.remove(`slide4`)
+        aboutSection.classList.add(`px-4`)
 
         aboutSection.classList.remove(`staticAnimation1`)
         aboutSection.classList.remove(`cursor-pointer`)
@@ -157,6 +160,7 @@ try{
                       setTimeout(()=>{
                           teamCard3.classList.add(`popUp5`)     
                           aboutImg.classList.add(`hidden`)
+                          aboutSection.classList.remove(`px-4`)
                         })
                     },150)
                 },150)
@@ -191,6 +195,8 @@ try{
         teamCard3.classList.remove(`popUp5`)
         aboutImg.classList.remove(`popUp2`)
         aboutTxt1.classList.remove(`popUp3`)
+        aboutSection.classList.add(`px-4`)
+
         aboutTxt2.classList.remove(`popUp3`)
         aboutTxt3.classList.remove(`popUp4`)
         aboutTxt4.classList.remove(`popUp3`)
@@ -228,6 +234,8 @@ homeLink2.addEventListener(`click`,()=>{
     teamSection.classList.remove(`slide2`)
     teamCard3.classList.remove(`popUp5`)  
     teamCard2.classList.remove(`popUp5`)  
+    aboutSection.classList.add(`px-4`)
+
     teamCard1.classList.remove(`popUp5`)  
     Ttext2.classList.remove(`popUp3`)
     Ttext1.classList.remove(`popUp3`)
@@ -247,6 +255,8 @@ try{aboutSection.addEventListener(`click`,()=>{
     aboutSection.classList.remove(`cursor-pointer`)
     teamSection.classList.remove(`bottom-full`)
     teamSection.classList.remove(`left-full`)
+    aboutSection.classList.add(`px-4`)
+
     teamSection.classList.remove(`zoom1`)
     setTimeout(()=>{
         aboutContent.classList.remove(`hidden`)
@@ -281,6 +291,8 @@ try{aboutLink.addEventListener(`click`,()=>{
     teamSection.classList.remove(`bottom-full`)
     teamSection.classList.remove(`left-full`)
     teamSection.classList.remove(`zoom1`)
+    aboutSection.classList.add(`px-4`)
+
     teamCard1.classList.remove(`popUp5`)  
     teamCard2.classList.remove(`popUp5`)  
     teamCard3.classList.remove(`popUp5`)
@@ -341,6 +353,7 @@ teamLink.addEventListener(`click`,()=>{
                   setTimeout(()=>{
                       teamCard3.classList.add(`popUp5`)     
                       aboutImg.classList.add(`hidden`)
+                      aboutSection.classList.remove(`px-4`)
                     })
                 },150)
             },150)
@@ -361,6 +374,8 @@ teamLink.addEventListener(`click`,()=>{
     homeLink.classList.add(`hidden`)
     homeLink2.classList.remove(`hidden`)
     navLinks.classList.add(`pb-14`)
+    aboutSection.classList.add(`px-4`)
+
     Ttext1.classList.remove(`popUp3`)
     Ttext2.classList.remove(`popUp3`)
     teamCard1.classList.remove(`popUp5`)
