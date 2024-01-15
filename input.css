@@ -1,6 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+html{
+    scrollbar-width: none;
+}
 header{width: 100%;height: 100vh;background:rgba(0,0,0,0.1) url(./recources/Picture1.jpg) no-repeat center/cover;background-blend-mode: darken;}
 #contact{background:rgba(0,0,0,0.3)url(./recources/Picture7.png) no-repeat center/cover;background-blend-mode:darken;}
 .devider1::after{content:"";position: absolute;bottom: -2rem;left:50%;transform: translateX(-50%);width: 70%;height: 0.05rem;background-color: rgba(251, 251, 251, 0.564);}

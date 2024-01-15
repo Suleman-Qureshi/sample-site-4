@@ -66,7 +66,7 @@ try{
      aboutContent.classList.remove(`zoom2`)
      aboutSection.classList.add(`cursor-pointer`)
      for(let x of aboutSection.classList){if(x==`popUp1`){aboutSection.classList.add(`reversePopUp1`);aboutSection.classList.remove(`popUp1`)}}
-     for(let x of contactSection.classList){if(x==`popUp6`){contactSection.classList.add(`reversePopUp6`)}} 
+     for(let x of contactSection.classList){if(x==`popUp6`){contactSection.classList.add(`reversePopUp6`);contactSection.classList.remove(`popUp6`)}} 
     })
 
 }catch(e){console.log(e)}
@@ -80,9 +80,10 @@ try{
         aboutTextDiv.classList.remove(`slide4`)
         mobilemenu.classList.remove(`menuanimation1`)
         aboutSection.classList.remove(`reversePopUp1`)
-        aboutImg.classList.add(`opacity-0`)
         aboutSection.classList.add(`popUp1`);
         exTxt2.classList.add(`hidden`);
+        aboutTextDiv.classList.remove(`slide4`)
+
         aboutSection.classList.remove(`staticAnimation1`)
         aboutSection.classList.remove(`cursor-pointer`)
         Ttext1.classList.remove(`popUp3`)
@@ -120,6 +121,8 @@ try{
 // ----------------------------------------mobilemenu-team-btn--------------------------------------------------------------
 try{
     menulink3.addEventListener(`click`,()=>{
+        menulink1.classList.remove(`hidden`)
+        menulink1a.classList.add(`hidden`)
         mobilemenu.classList.add(`hidden`)
         mobilemenu.classList.remove(`flex`)
         mobilemenu.classList.remove(`menuanimation1`)
@@ -137,6 +140,8 @@ try{
         aboutImg.classList.add(`slide3`)
         aboutTextDiv.classList.add(`slide4`)
         aboutContent.classList.add(`zoom1`)
+        aboutContent.classList.remove(`hidden`)
+        aboutContent.classList.remove(`revzoom1`)
         teamSection.classList.add(`slide2`)
         aboutTxt1.classList.remove(`popUp3`)
         aboutTxt2.classList.remove(`popUp3`)
@@ -151,6 +156,7 @@ try{
                       teamCard2.classList.add(`popUp5`)     
                       setTimeout(()=>{
                           teamCard3.classList.add(`popUp5`)     
+                          aboutImg.classList.add(`hidden`)
                         })
                     },150)
                 },150)
@@ -162,11 +168,18 @@ try{
 // ----------------------------------------mobilemenu-contact-btn--------------------------------------------------------------
 try{
     menulink4.addEventListener(`click`,()=>{
+        menulink1.classList.remove(`hidden`)
+        menulink1a.classList.add(`hidden`)
         mobilemenu.classList.add(`hidden`)
         mobilemenu.classList.remove(`flex`)
         mobilemenu.classList.remove(`menuanimation1`)
-        aboutSection.classList.add(`cursor-pointer`)
+        aboutContent.classList.remove(`hidden`)
+        teamSection.classList.add(`top-full`)
+        teamSection.classList.add(`left-full`)
+        teamSection.classList.remove(`slide2`)
         contactSection.classList.add(`popUp6`)
+        aboutContent.classList.remove(`zoom1`)
+        aboutContent.classList.remove(`revzoom1`)
         contactSection.classList.remove(`reversePopUp6`)
         homeLink.classList.add(`hidden`)
         homeLink2.classList.remove(`hidden`)
@@ -181,9 +194,6 @@ try{
         aboutTxt2.classList.remove(`popUp3`)
         aboutTxt3.classList.remove(`popUp4`)
         aboutTxt4.classList.remove(`popUp3`)
-        teamSection.classList.add(`top-full`)
-    teamSection.classList.add(`left-full`)
-    teamSection.classList.remove(`slide2`)
         for(let x of aboutSection.classList){if(x==`popUp1`){aboutSection.classList.add(`reversePopUp1`);aboutSection.classList.remove(`popUp1`)}}
         for(let x of teamSection.classList){if(x==`popUp1`){teamSection.classList.add(`reversePopUp2`);teamSection.classList.remove(`popUp1`)}}
     })
